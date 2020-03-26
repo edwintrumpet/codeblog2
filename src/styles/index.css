@@ -1,5 +1,6 @@
 @import url("./constants/colors.css");
 @import url("./constants/fonts.css");
+@import url("./theming.css");
 
 .___gatsby {
   position: absolute;
@@ -34,26 +35,7 @@ li {
   list-style: none;
 }
 
-.dark-background {
-  background-color: var(--color-black);
-}
-
-.light-background {
-  background-color: var(--color-white);
-}
-
-.dark-full-contrast {
-  color: var(--color-white);
-}
-
-.light-full-contrast {
-  color: var(--color-black);
-}
-
-.dark-high-contrast {
-  color: var(--color-light-gray);
-}
-
-.light-high-contrast {
-  color: var(--color-dark-gray);
+.layout {
+  position: absolute;
+  min-height: 100%;
 }

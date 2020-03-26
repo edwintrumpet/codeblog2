@@ -1,6 +1,7 @@
 import React from 'react';
 import { shape as _shape, string as _string } from 'prop-types';
 import '../styles/components/Card.css';
+import { dark } from '../utils/state';
 
 export default function Card({
   frontmatter: {
@@ -11,8 +12,6 @@ export default function Card({
   },
   excerpt,
 }) {
-  const dark = false;
-
   let textContainerClass = 'card__text-container';
   let authorClass = 'card__author';
   let categoryClass = '';

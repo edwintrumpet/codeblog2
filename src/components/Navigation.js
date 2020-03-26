@@ -4,10 +4,10 @@ import React, { useState } from 'react';
 import MenuIcon from '../assets/icons/MenuIcon';
 import CloseIcon from '../assets/icons/CloseIcon';
 import '../styles/components/Navigation.css';
+import { dark } from '../utils/state';
 
 export default function Navigation() {
   const [showMenu, setShowMenu] = useState(false);
-  const dark = false;
 
   const menuItems = [
     'Inicio',
