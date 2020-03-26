@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from '../assets/icons/Logo';
+import Navigation from './Navigation';
 import '../styles/components/Header.css';
 
 export default function Header() {
@@ -17,6 +18,7 @@ export default function Header() {
           <h2>{subtitle}</h2>
         </div>
       </div>
+      <Navigation />
     </div>
   );
 }
