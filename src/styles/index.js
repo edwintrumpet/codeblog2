@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-const GlobalStyles = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
     .___gatsby {
         position: absolute;
     }
@@ -14,4 +14,4 @@ const GlobalStyles = createGlobalStyle`
     }
 `;
 
-export default GlobalStyles;
+export default GlobalStyle;
