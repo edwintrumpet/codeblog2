@@ -12,6 +12,8 @@ npm i
 
 - **`npm run dev`:** Start the project in development mode
 - **`npm run build`:** Build static files for production
+- **`npm run lint`:** Show syntax problems
+- **`npm run lint:fix`:** Fix syntax problems
 
 ## Author
 
