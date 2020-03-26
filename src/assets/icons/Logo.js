@@ -1,6 +1,5 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import palette from '../../styles/constants/palette';
 
 function Logo(props) {
   const { size, color } = props;
@@ -91,7 +90,7 @@ Logo.propTypes = {
 
 Logo.defaultProps = {
   size: 60,
-  color: palette.lightGray,
+  color: '#cecdcf',
 };
 
 export default Logo;
