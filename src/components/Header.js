@@ -1,14 +1,6 @@
 import React from 'react';
 import Logo from '../assets/icons/Logo';
-import {
-  Container,
-  Brand,
-  DesktopIcon,
-  MobileIcon,
-  BrandText,
-  Title,
-  Subtitle,
-} from '../styles/components/Header';
+import '../styles/components/Header.css';
 
 export default function Header() {
   // Import this from metadata
@@ -16,19 +8,15 @@ export default function Header() {
   const subtitle = 'Software developer';
 
   return (
-    <Container>
-      <Brand>
-        <DesktopIcon>
-          <Logo size={80} />
-        </DesktopIcon>
-        <MobileIcon>
-          <Logo />
-        </MobileIcon>
-        <BrandText>
-          <Title>{title}</Title>
-          <Subtitle>{subtitle}</Subtitle>
-        </BrandText>
-      </Brand>
-    </Container>
+    <div className="header">
+      <div className="header__brand">
+        <Logo size={80} className="header__brand__logo--desktop" />
+        <Logo className="header__brand__logo--mobile" />
+        <div className="header__brand__text">
+          <h1>{title}</h1>
+          <h2>{subtitle}</h2>
+        </div>
+      </div>
+    </div>
   );
 }
