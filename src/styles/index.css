@@ -1,0 +1,35 @@
+@import url("./constants/colors.css");
+@import url("./constants/fonts.css");
+
+.___gatsby {
+  position: absolute;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-normal);
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: var(--font-family-title);
+  font-weight: normal;
+}
+
+h1 {
+  font-size: var(--font-size-super);
+}
+
+li {
+  list-style: none;
+}
