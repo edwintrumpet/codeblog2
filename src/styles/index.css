@@ -49,3 +49,11 @@ li {
 .light-full-contrast {
   color: var(--color-black);
 }
+
+.dark-high-contrast {
+  color: var(--color-light-gray);
+}
+
+.light-high-contrast {
+  color: var(--color-dark-gray);
+}

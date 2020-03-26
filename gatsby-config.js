@@ -17,5 +17,15 @@ module.exports = {
         path: `${__dirname}/content/posts/`,
       },
     },
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        commonmark: true,
+        footnotes: true,
+        pedantic: true,
+        gfm: true,
+        plugins: [],
+      },
+    },
   ],
 };
