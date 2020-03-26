@@ -35,7 +35,9 @@ export default function Card({
 
   return (
     <div className="card">
-      <div className="card__image-container" />
+      <div className="card__image-container">
+        <img src={cover} alt={title} />
+      </div>
       <div className={textContainerClass}>
         <span className={categoryClass}>{category}</span>
         <h1 className={titleClass}>{title}</h1>
