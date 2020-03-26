@@ -1,7 +1,7 @@
 ---
 title: Expresiones regulares
 category: Fundamentos de programación
-cover: gatsby.jpeg
+cover: https://www.campusmvp.es/recursos/image.axd?picture=Expresiones-Regulares.png
 author: Edwin García
 ---
 
