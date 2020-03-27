@@ -1,20 +1,15 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState } from 'react';
+import { Link } from 'gatsby';
 import MenuIcon from '../assets/icons/MenuIcon';
 import CloseIcon from '../assets/icons/CloseIcon';
 import '../styles/components/Navigation.css';
 import { dark } from '../utils/state';
+import menuItems from '../../content/meta/navigation';
 
 export default function Navigation() {
   const [showMenu, setShowMenu] = useState(false);
-
-  const menuItems = [
-    'Inicio',
-    'Portafolio',
-    'Sobre mí',
-    'Contacto',
-  ];
 
   let navigationMobileClass = 'navigation__mobile';
   if (showMenu) navigationMobileClass += ' navigation__mobile--open';
@@ -27,7 +22,11 @@ export default function Navigation() {
     <>
       <div className="navigation__desktop">
         <ul>
-          {menuItems.map((item) => <li key={item}>{item}</li>)}
+          {menuItems.map((item) => (
+            <Link to={item.url} key={item.name}>
+              <li>{item.name}</li>
+            </Link>
+          ))}
         </ul>
       </div>
       <div className="navigation__menu-icon">
@@ -41,7 +40,11 @@ export default function Navigation() {
       />
       <div className={navigationMobileClass}>
         <ul>
-          {menuItems.map((item) => <li key={item}>{item}</li>)}
+          {menuItems.map((item) => (
+            <Link to={item.url} key={item.name}>
+              <li>{item.name}</li>
+            </Link>
+          ))}
         </ul>
         <CloseIcon
           className="navigation__mobile-close"
