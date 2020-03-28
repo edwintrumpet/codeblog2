@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import Logo from '../assets/icons/Logo';
 import Navigation from './Navigation';
 import '../styles/components/Header.css';
@@ -10,14 +11,16 @@ export default function Header() {
 
   return (
     <div className="header">
-      <div className="header__brand">
-        <Logo size={80} className="header__brand__logo--desktop" />
-        <Logo className="header__brand__logo--mobile" />
-        <div className="header__brand__text">
-          <h1>{title}</h1>
-          <h2>{subtitle}</h2>
+      <Link to="/">
+        <div className="header__brand">
+          <Logo size={80} className="header__brand__logo--desktop" />
+          <Logo className="header__brand__logo--mobile" />
+          <div className="header__brand__text">
+            <h1>{title}</h1>
+            <h2>{subtitle}</h2>
+          </div>
         </div>
-      </div>
+      </Link>
       <Navigation />
     </div>
   );

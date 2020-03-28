@@ -1,0 +1,23 @@
+.dark-background {
+  background-color: var(--color-black);
+}
+
+.light-background {
+  background-color: var(--color-white);
+}
+
+.dark-full-contrast {
+  color: var(--color-white);
+}
+
+.light-full-contrast {
+  color: var(--color-black);
+}
+
+.dark-high-contrast {
+  color: var(--color-light-gray);
+}
+
+.light-high-contrast {
+  color: var(--color-dark-gray);
+}
