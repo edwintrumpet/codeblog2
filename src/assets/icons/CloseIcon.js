@@ -2,9 +2,9 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 
 function CloseIcon(props) {
-  const { color } = props;
+  const { color, size } = props;
   return (
-    <svg width={40} height={40} viewBox="0 0 40 40" {...props}>
+    <svg width={size} height={size} viewBox="0 0 40 40" {...props}>
       <path data-name="Rect\xE1ngulo 80" fill="none" d="M0 0h40v40H0z" />
       <g data-name="Trazado 28" fill={color}>
         <path d="M22.857 20z" />
@@ -36,10 +36,12 @@ function CloseIcon(props) {
 
 CloseIcon.propTypes = {
   color: PropTypes.string,
+  size: PropTypes.number,
 };
 
 CloseIcon.defaultProps = {
   color: '#5C5B62',
+  size: 40,
 };
 
 export default CloseIcon;

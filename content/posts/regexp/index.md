@@ -3,6 +3,8 @@ title: Expresiones regulares
 category: Fundamentos de programación
 cover: https://www.campusmvp.es/recursos/image.axd?picture=Expresiones-Regulares.png
 author: Edwin García
+type: blog
+url: nothing
 ---
 
 Las expresiones regulares nos sirven para representar modelos de patrones que coincidan con textos que sean de nuestro interés.
