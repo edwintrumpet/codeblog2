@@ -7,6 +7,7 @@ module.exports = {
           'Liu Jian Mao Cao',
           'ABeeZee',
           'Roboto',
+          'Ubuntu Mono',
         ],
       },
     },
