@@ -2,7 +2,7 @@
   position: fixed;
   top: 60px;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
   width: 100%;
   padding: 16px;
   height: calc(100% - 60px);
@@ -43,7 +43,7 @@
     background-color: rgba(0, 0, 0, 0);
   }
   100% {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.9);
   }
 }
 

@@ -5,7 +5,7 @@ import '../styles/components/WatchVideo.css';
 
 export default function WatchVideo({ handleClose, videoId }) {
   return (
-    <div className="watch-video">
+    <div className="watch-video" onClick={handleClose}>
       <div className="watch-video__container">
         <iframe
           className="watch-video__video"
