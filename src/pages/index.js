@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   shape as _shape,
   arrayOf as _arrayOf,
@@ -7,6 +7,7 @@ import {
 import { Link, graphql } from 'gatsby';
 import Card from '../components/Card';
 import '../styles/pages/home.css';
+import WatchVideo from '../components/WatchVideo';
 
 export const query = graphql`
   query GET_POSTS{
@@ -20,6 +21,8 @@ export const query = graphql`
               category
               cover
               author
+              type
+              url
             }
             excerpt(truncate: false, pruneLength: 120)
           }
@@ -30,6 +33,8 @@ export const query = graphql`
 `;
 
 export default function index({ data }) {
+  const [showVideo, setShowVideo] = useState(false);
+  const [videoId, setVideoId] = useState('');
   const posts = [];
 
   data.allFile.edges.forEach((element) => {
@@ -37,13 +42,32 @@ export default function index({ data }) {
     if (item) posts.push(item);
   });
 
+  const handleOpenVideo = (element) => {
+    setVideoId(element.frontmatter.url);
+    setShowVideo(true);
+  };
+
+  const handleCloseVideo = () => {
+    setShowVideo(false);
+  };
+
   return (
     <div className="home">
-      {posts.map((element) => (
-        <Link key={element.id} to={element.id}>
-          <Card {...element} />
-        </Link>
-      ))}
+      {posts.map((element) => {
+        if (element.frontmatter.type === 'video') {
+          return (
+            <div key={element.id} onClick={() => handleOpenVideo(element)}>
+              <Card {...element} />
+            </div>
+          );
+        }
+        return (
+          <Link key={element.id} to={element.id}>
+            <Card {...element} />
+          </Link>
+        );
+      })}
+      {showVideo && <WatchVideo handleClose={handleCloseVideo} videoId={videoId} />}
     </div>
   );
 }

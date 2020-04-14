@@ -41,7 +41,7 @@ export default function Navigation() {
       <div className={navigationMobileClass}>
         <ul>
           {menuItems.map((item) => (
-            <Link to={item.url} key={item.name}>
+            <Link to={item.url} key={item.name} onClick={handleClick}>
               <li>{item.name}</li>
             </Link>
           ))}
