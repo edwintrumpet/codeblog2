@@ -8,7 +8,7 @@ export default function UnderConstruction({ site }) {
       <h1>
         {site}
         {' '}
-        under construction
+        se encuentra en construcción
       </h1>
     </div>
   );

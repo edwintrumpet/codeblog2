@@ -56,7 +56,11 @@ export default function index({ data }) {
       {posts.map((element) => {
         if (element.frontmatter.type === 'video') {
           return (
-            <div key={element.id} onClick={() => handleOpenVideo(element)}>
+            <div
+              role="button"
+              key={element.id}
+              onClick={() => handleOpenVideo(element)}
+            >
               <Card {...element} />
             </div>
           );

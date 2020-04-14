@@ -4,19 +4,19 @@ export default [
     name: 'Inicio',
   },
   {
-    url: '/courses',
+    url: '/cursos',
     name: 'Cursos',
   },
   {
-    url: '/challenges',
+    url: '/retos',
     name: 'Retos',
   },
   {
-    url: '/briefcase',
+    url: '/portafolio',
     name: 'Portafolio',
   },
   {
-    url: '/contact',
+    url: '/contacto',
     name: 'Contacto',
   },
 ];
